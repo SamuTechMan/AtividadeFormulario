@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <form class="formulario">
+      <fieldset class="elementosForm">
+        <img
+          class="imgMedico"
+          src="https://static.vecteezy.com/system/resources/previews/019/152/941/non_2x/young-male-doctor-illustration-health-and-medical-service-illustration-free-png.png"
+          alt="medico"
+        />
+        <fieldset class="cadastroGeral">
+          <legend>Cadastro Geral</legend>
+          <div class="dadosELocalizacao">
+            <div class="dadosPessoais">
+              <fieldset>
+                <img
+                  class="imgDados"
+                  src="https://universidadedatecnologia.com.br/wp-content/uploads/2019/01/dice-300x244.png"
+                  alt="dados"
+                />
+                <legend>Dados pessoais</legend>
+                <p>Nome Completo:</p>
+                <input type="text" />
+                <p>Profissão:</p>
+                <select name="profissoes">
+                  <option value="informatica" selected>Sua profissão</option>
+                  <option value="medico">Médico</option>
+                  <option value="engenheiro">Engenheiro</option>
+                  <option value="informatica">Informática</option>
+                  <option value="professor">Professor</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </fieldset>
+            </div>
+            <div class="localizacao">
+              <fieldset>
+                <img
+                  class="imgLocalizacao"
+                  src="https://m.media-amazon.com/images/I/71bhnNHypaL.png"
+                  alt="localizacao"
+                />
+                <legend>Localização</legend>
+                <p>E-mail:</p>
+                <input type="email" />
+                <p>Rua:</p>
+                <input type="text" />
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="faixaEtaria">
+            <fieldset>
+              <img
+                class="imgFaixaEtaria"
+                src="https://cdn-icons-png.flaticon.com/512/2040/2040944.png"
+                alt="faixaEtaria"
+              />
+              <legend>Faixa etária</legend>
+              <div class="selecaoFaixaEtaria">
+                <div class="faixa20ate40">
+                  <input type="radio" name="faixaEtaria" /> até 20 anos
+                  <br />
+                  <input type="radio" name="faixaEtaria" /> mais de 20 até 30
+                  anos
+                  <br />
+                  <input type="radio" name="faixaEtaria" /> mais de 30 até 40
+                  anos
+                  <br />
+                </div>
+                <div class="faixa40ate60">
+                  <input type="radio" name="faixaEtaria" /> mais de 40 até 50
+                  anos
+                  <br />
+                  <input type="radio" name="faixaEtaria" /> mais de 50 até 60
+                  anos
+                  <br />
+                  <input type="radio" name="faixaEtaria" /> mais de 60 anos
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="esportePratica">
+            <fieldset>
+              <img
+                class="imgEsportePratica"
+                src="https://testesdoforlis.files.wordpress.com/2015/11/ganhar-musculos-treino-pesado.png"
+                alt="musculacao"
+              />
+              <legend>Esportes que pratica</legend>
+              <input type="checkbox" name="esportePraticado" />Futebol de campo
+              <br />
+              <input type="checkbox" name="esportePraticado" />Futebol de salão
+              <br />
+              <input type="checkbox" name="esportePraticado" />Futebol de
+              society
+              <br />
+              <input type="checkbox" name="esportePraticado" />Volley de quadra
+              <br />
+              <input type="checkbox" name="esportePraticado" />Volley de praia
+              <br />
+              <input type="checkbox" name="esportePraticado" />Natação em
+              piscina
+              <br />
+              <input type="checkbox" name="esportePraticado" />Natação em mar
+              aberto
+              <br />
+            </fieldset>
+          </div>
+        </fieldset>
+        <div class="comentario">
+          <fieldset>
+            <img
+              class="imgComentario"
+              src="https://definicion.de/wp-content/uploads/2010/08/habla.png"
+              alt="comentario"
+            />
+            <legend>Comentário</legend>
+            <p>Mensagem:</p>
+            <textarea name="comentario" cols="40" rows="10"></textarea>
+          </fieldset>
+        </div>
+        <div class="botoes">
+          <button class="btnEnviar">Enviar</button>
+          <button class="btnLimpar">Limpar</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
