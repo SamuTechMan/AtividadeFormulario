@@ -9,27 +9,19 @@
   <body>
     <form class="formulario">
       <fieldset class="elementosForm">
-        <img
-          class="imgMedico"
-          src="https://static.vecteezy.com/system/resources/previews/019/152/941/non_2x/young-male-doctor-illustration-health-and-medical-service-illustration-free-png.png"
-          alt="medico"
-        />
+        <img class="imgMedico" src="img/medico.png" alt="medico" />
         <fieldset class="cadastroGeral">
           <legend>Cadastro Geral</legend>
           <div class="dadosELocalizacao">
             <div class="dadosPessoais">
               <fieldset>
-                <img
-                  class="imgDados"
-                  src="https://universidadedatecnologia.com.br/wp-content/uploads/2019/01/dice-300x244.png"
-                  alt="dados"
-                />
+                <img class="imgDados" src="img/dado.png" alt="dados" />
                 <legend>Dados pessoais</legend>
                 <p>Nome Completo:</p>
-                <input type="text" />
+                <input class="entradaNomeCompleto" type="text" />
                 <p>Profissão:</p>
-                <select name="profissoes">
-                  <option value="informatica" selected>Sua profissão</option>
+                <select class="entradaProfissoes" name="profissoes">
+                  <option value="suaprofissao" selected>Sua profissão</option>
                   <option value="medico">Médico</option>
                   <option value="engenheiro">Engenheiro</option>
                   <option value="informatica">Informática</option>
@@ -42,14 +34,14 @@
               <fieldset>
                 <img
                   class="imgLocalizacao"
-                  src="https://m.media-amazon.com/images/I/71bhnNHypaL.png"
+                  src="img/mapa.png"
                   alt="localizacao"
                 />
                 <legend>Localização</legend>
                 <p>E-mail:</p>
-                <input type="email" />
+                <input class="entradaEmail" type="email" />
                 <p>Rua:</p>
-                <input type="text" />
+                <input class="entradaRua" type="text" />
               </fieldset>
             </div>
           </div>
@@ -58,7 +50,7 @@
             <fieldset>
               <img
                 class="imgFaixaEtaria"
-                src="https://cdn-icons-png.flaticon.com/512/2040/2040944.png"
+                src="img/faixaEtaria.png"
                 alt="faixaEtaria"
               />
               <legend>Faixa etária</legend>
@@ -89,25 +81,25 @@
             <fieldset>
               <img
                 class="imgEsportePratica"
-                src="https://testesdoforlis.files.wordpress.com/2015/11/ganhar-musculos-treino-pesado.png"
+                src="img/musculacao.png"
                 alt="musculacao"
               />
               <legend>Esportes que pratica</legend>
-              <input type="checkbox" name="esportePraticado" />Futebol de campo
+              <input type="checkbox" name="esportePraticado" /> Futebol de campo
               <br />
-              <input type="checkbox" name="esportePraticado" />Futebol de salão
+              <input type="checkbox" name="esportePraticado" /> Futebol de salão
               <br />
-              <input type="checkbox" name="esportePraticado" />Futebol de
+              <input type="checkbox" name="esportePraticado" /> Futebol de
               society
               <br />
-              <input type="checkbox" name="esportePraticado" />Volley de quadra
+              <input type="checkbox" name="esportePraticado" /> Volley de quadra
               <br />
-              <input type="checkbox" name="esportePraticado" />Volley de praia
+              <input type="checkbox" name="esportePraticado" /> Volley de praia
               <br />
-              <input type="checkbox" name="esportePraticado" />Natação em
+              <input type="checkbox" name="esportePraticado" /> Natação em
               piscina
               <br />
-              <input type="checkbox" name="esportePraticado" />Natação em mar
+              <input type="checkbox" name="esportePraticado" /> Natação em mar
               aberto
               <br />
             </fieldset>
@@ -117,7 +109,7 @@
           <fieldset>
             <img
               class="imgComentario"
-              src="https://definicion.de/wp-content/uploads/2010/08/habla.png"
+              src="img/comentario.png"
               alt="comentario"
             />
             <legend>Comentário</legend>
@@ -126,8 +118,8 @@
           </fieldset>
         </div>
         <div class="botoes">
-          <button class="btnEnviar">Enviar</button>
-          <button class="btnLimpar">Limpar</button>
+          <button type="submit" class="btnEnviar">Enviar</button>
+          <button type="reset" class="btnLimpar">Limpar</button>
         </div>
       </fieldset>
     </form>
