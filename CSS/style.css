@@ -11,6 +11,7 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 15px;
   justify-content: center;
+  align-items: center;
 }
 fieldset {
   border: 1px solid green;
@@ -18,21 +19,25 @@ fieldset {
 legend {
   border: 1px solid green;
 }
+img {
+  opacity: 55%;
+}
 .formulario {
   background-color: rgba(84, 204, 84, 0.151);
-  height: 127%;
+  height: auto;
 }
 .dadosPessoais {
   width: 50%;
   margin-right: 15px;
 }
-.entradaNomeCompleto{
-width: 300px;
+.entradaNomeCompleto {
+  width: 300px;
 }
-.entradaProfissoes{
-width: 308px;
+.entradaProfissoes {
+  width: 308px;
 }
-.entradaEmail, .entradaRua{
+.entradaEmail,
+.entradaRua {
   width: 308px;
 }
 
@@ -57,8 +62,6 @@ width: 308px;
   display: flex;
   flex-direction: row;
   padding: 10px;
-
-  
 }
 .faixaEtaria {
   margin-top: 15px;
@@ -124,4 +127,112 @@ width: 308px;
   margin-left: 500px;
   height: 210px;
   width: 220px;
+}
+@media (max-width: 777px) {
+  body {
+    font-size: 14px;
+  }
+  .formulario {
+    height: auto;
+    overflow-y: auto;
+  }
+  .cadastroGeral {
+    width: 100%;
+  }
+  .dadosPessoais,
+  .localizacao {
+    width: 100%;
+    margin-right: 0;
+  }
+  .dadosPessoais {
+    margin-right: 5px;
+  }
+  .entradaNomeCompleto,
+  .entradaProfissoes,
+  .entradaEmail,
+  .entradaRua {
+    width: 90%;
+  }
+  .elementosForm {
+    padding-left: 20px;
+    padding-right: 28px;
+  }
+  .imgMedico,
+  .imgDados,
+  .imgLocalizacao,
+  .imgFaixaEtaria,
+  .imgEsportePratica,
+  .imgComentario {
+    display: none;
+  }
+  .botoes {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 420px) {
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+  .formulario {
+    height: 100%;
+  }
+  .cadastroGeral {
+    width: 102%;
+  }
+  .dadosELocalizacao {
+    flex-direction: column;
+  }
+  .dadosPessoais,
+  .localizacao {
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  .faixaEtaria {
+    width: 100%;
+  }
+  .esportePratica {
+    width: 100%;
+  }
+  .entradaNomeCompleto,
+  .entradaProfissoes,
+  .entradaEmail,
+  .entradaRua {
+    width: 90%;
+  }
+  .elementosForm {
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 28px;
+  }
+  .imgMedico,
+  .imgDados,
+  .imgLocalizacao,
+  .imgFaixaEtaria,
+  .imgEsportePratica,
+  .imgComentario {
+    display: none;
+  }
+  .faixa20ate40 input,
+  .faixa40ate60 input {
+    margin-top: 20px;
+  }
+  .selecaoFaixaEtaria {
+    padding: 5px;
+  }
+  .comentario textarea {
+    width: 220px;
+  }
+}
+@media (max-height: 824px) {
+  .formulario {
+    margin-top: 20%;
+  }
+}
+@media (max-height: 670px) {
+  .formulario {
+    margin-top: 25%;
+  }
 }
