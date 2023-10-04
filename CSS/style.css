@@ -169,6 +169,10 @@ img {
     display: flex;
     justify-content: center;
   }
+  .faixa20ate40 input,
+  .faixa40ate60 input {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 420px) {
   body {
